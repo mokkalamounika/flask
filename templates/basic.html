@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body{
+  
+  
+  }
+  h1,p{
+   text-transform:uppercase;
+    letter-spacing: 3px;
+   }
+  .nav-item{
+    margin:0px 10px 0 10px;
+   }
+   .btn--gold{
+    background-color:#886735;
+     color:#FFFFFF;
+     margin:20px 0px 5px 0px ;
+    }
+     .btn--white{
+    background-color:#FFFFFF;
+     color:#886735;
+       margin:20px 0px 5px 0px ;
+    }
+    .btn--gold:hover{
+      background-color:rgb(228,99,70);
+    }
+    .btn--white:hover{
+      background-color:rgb(228,99,70);
+    }
+    .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ a{
+ color:white;
+ text-decoration:underline;
+ }
+ a:hover{
+  color:#886735;
+ }
+  </style>
+    {% block head %} {% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top">
+  <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWyAP6RijmkI-JD2yrz2GYB4NycwWArebOug&usqp=CAU" style="padding:2;width:40px;height:40px" class="profile-img"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="/catering">Catering</a>
+      </li> 
+         <li class="nav-item">
+        <a class="nav-link" href="/menu">Menu</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="/location">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactus">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactdetails">ContactDetails</a>
+      </li> 
+      
+       
+      
+    </ul>
+  
+  </div>  
+
+</nav>
+
+{% block body %} {% endblock %}
+
+          
+<div style="background-color:#000000;">
+     <div style="text-align:center;color:#FFFFFF">
+                <p style="font-size:16px;padding:65px 0px 5px 0px;">Subscribe to our mailing address</p>
+                <div style="padding:0px 10px 100px 10px">
+                   <input type="text" placeholder="Enter Email" name="EMAIL" style="width:400px;padding:6px 12px;background-color:#FFFFFF;color:#000000;"/>
+                   <a href="#" class="btn btn--gold" style="margin:8px 0px 5px;">Subscribe</a>
+                   </br>
+                </div>
+             <div style="color:#FFFFFF;margin:0% 5%" class="clearfix">
+         
+               <div style="float:left;width:50%;height:300px;padding:50px;margin:auto;background-image:url('https://image.freepik.com/free-photo/food-with-ingredients_1220-4884.jpg'); background-repeat:no-repeat;background-attchment:fixed;background-size:cover;">
+                <em style="font-size:20px">Pitmaster loyalty Club</em>
+               </div>
+               <div style="float:left;width:50%;padding:20px;">
+               <p>CONTACT DETAILS</p>
+                <p >1-844-4RIVERS</p>
+                 <p>(1-844-474-4456)</p>
+                 <p>Downtown Orando</p>
+                   <a href="/contactus" class="btn btn--gold">CONTACT US</a>
+               </div>
+             </div>
+           </div>
+          </div>
+</body>
+</html>

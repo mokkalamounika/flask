@@ -1,0 +1,27 @@
+{% extends 'basic.html' %}
+{% block head %}
+<title>Location</title> 
+{% endblock %}
+{% block body %}
+<div style="width:100%;height:80px"></div>
+<div style="color:#000000;margin:50px" class="clearfix">
+<div style="float:left;width:50%;">
+<div class="mapouter">
+<div class="gmap_canvas">
+<iframe width="70%" height="500" 
+      id="gmap_canvas" src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://www.embedgooglemap.net/en/">embedgooglemap.net</a>
+</div>
+ <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+</style>
+</div>
+</div>
+<div style="float:left;width:50%;padding:50px">
+                      <h1>Hyderabad</h>
+                       </br>
+                      <a href="/contactus" class="btn btn--gold" style="margin:8px 0px 5px;">Contact Us</a>
+                      </br> 
+</div>
+</div>
+{% endblock%}

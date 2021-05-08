@@ -1,0 +1,28 @@
+{% extends 'basic.html' %}
+{% block head %}
+<title>Details</title> 
+{% endblock %}
+
+
+{% block body %}
+<div style="width:100%;height:80px"></div>
+<br>
+<div style="margin:0% 0% 0% 10%">
+    <h1 style="display:inline">All Details</h1>
+    <a style="display:inline" class="btn btn-success float-right" href="/contactus" >+ New Detail</a>
+</div>
+    <hr>
+
+    {% for contact in contacts %}
+        <h2 style="margin:0% 0% 0% 10%">{{ contact.name }}</h2>
+        <h3 style="margin:0% 0% 0% 10%">Email: {{contact.email}}</h3>
+        <h3 style="margin:0% 0% 0% 10% ">Phone: {{contact.phone}}</h3>
+        <h3 style="margin:0% 0% 0% 10% " >Reason: {{contact.reason}}</h3>
+        <br>
+        <a class="btn btn-danger" href='/detail/delete/{{contact.id}}'>Delete</a>
+       
+        <br>
+        <hr>
+        <br>
+    {% endfor%}
+{% endblock %}

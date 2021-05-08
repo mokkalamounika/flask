@@ -1,0 +1,225 @@
+{% extends 'basic.html' %}
+{% block head %}
+<title>Menu</title> 
+<script type="text/javascript">
+
+    function toggle_visibility(id) {
+       var e = document.querySelector(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
+{% endblock %}
+
+{% block body %}
+<div style="width:100%;height:40px"></div>
+<div style=" background-image:url('https://image.freepik.com/free-photo/cranberry-sauce-with-ingredients_73387-627.jpg');
+  background-repeat:no-repeat;background-attchment:fixed;background-size:cover;height:500px;padding:50px 10px 20px 10px">
+        <div style="text-align:center;color:#FFFFFF">
+             <h1 style="font-size:80px;" >Our Menu</h1>
+                <p style="font-size:20px;padding:20px 0px 5px 0px;">For pricing,see our online details</p>
+                </br>
+                <a href="/contactus" class="btn btn--gold">Order online</a>
+                </br>
+                <p style="font-size:20px;padding:20px 0px 0px 0px;">For call ahead pick-up ordering,call 844-474-8377</p>
+                <p style="font-size:20px;padding:0px">For downtown orlando ordering,call 407-270-6400</p>
+        </div>
+</div>
+
+<div>
+     <div class="HoverOn"  style="text-align:center;border:1px solid black;">
+             <h1 style="font-size:30px;font-style:italic;margin:0px auto;padding:70px;display:inline-block;">BBQ CLASSICS</h1>
+             <i class="fa fa-plus-circle" onclick="toggle_visibility('#bbq')" style="font-size:36px;"></i>
+	</div>
+		     <div id="bbq" style="display:none;padding:30px 100px;border:1px solid black;" >
+				 <h1 style="margin:40px;color:rgb(228,99,70);text-align:center">
+					 BBQ CLASSICS
+				 </h1>
+				 <p  style="margin=10px">
+					 MENU OPTIONS INCLUDE: SANDWICH, SANDWICH PLUS TWO SIDES, MEAT PLUS THREE SIDES AND YOUR CHOICE OF BREAD, AND MEAT BY THE 1/2 LB. *PRICING AND MENU ITEM AVAILABILITY VARY BY LOCATION.
+				 </p>
+				 <div class="row">
+					 <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+						SIGNATURE ANGUS BRISKET	 
+						 </h4>
+						 <p>
+							Our signature 18-hour smoked Angus brisket seasoned with John Rivers' signature rub, sliced lean or moist	 
+						 </p>
+					 </div>
+					  <div class="col-6">
+						  <h4 style="color:rgb(228,99,70)">
+							PULLED PORK 
+						 </h4>
+						 <p>
+							Southern-style pulled pork 
+							 
+						 </p>
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							PULLED CHICKEN 
+						 </h4>
+						 <p>
+							Pulled smoked chicken 
+							 
+						 </p> 
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							BURNT ENDS 
+						 </h4>
+						 <p>
+							Brisket shredded with pulled pork, smothered with our signature BBQ sauce and re-smoked to perfection 	 
+						 </p> 
+					 </div>
+				 </div>
+		 </div>
+       </div>
+</div>
+<div>
+     <div class="HoverOn"  style="text-align:center;border:1px solid black;">
+             <h1 style="font-size:30px;font-style:italic;margin:0px auto;padding:70px;display:inline-block;">JOHN RIVERS ORIGINALS</h1>
+             <i class="fa fa-plus-circle" onclick="toggle_visibility('#john')" style="font-size:36px;"></i>
+	</div>
+		 <div id="john" style="display:none;padding:30px 100px;border:1px solid black;" >
+				 <h1 style="margin:40px;color:rgb(228,99,70);text-align:center">
+					 JOHN RIVERS ORIGINALS
+				 </h1>
+				 <p  style="margin=10px">
+					 JOHN RIVERS ORIGINALS. *PRICING AND MENU ITEM AVAILABILITY VARY BY LOCATION.
+				 </p>
+				 <div class="row">
+					 <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+						MESSY PIG
+						 </h4>
+						 <p>
+							Heaping pile of pulled pork between 2 layers of coleslaw, topped with pickles and jalapeños, served on a brioche bun and smothered in 4R Signature Sauce.
+						 </p>
+					 </div>
+					  <div class="col-6">
+						  <h4 style="color:rgb(228,99,70)">
+							TEXAS DESTROYER
+						 </h4>
+						 <p>
+							Signature Angus brisket, topped with onion rings, jalapeños, melted provolone, served on a brioche bun and smothered in 4R Signature Sauc
+							 
+						 </p>
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							THE LONGHORN							
+
+						 </h4>
+						 <p>
+							Chopped brisket, Texas sausage served on a toasted roll over smokehouse relish, topped with onion rings and melted provolone.
+							 
+						 </p> 
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							BBQ STREET TACOS 
+						 </h4>
+						 <p>
+							Three grilled tortillas loaded with your choice of meat, pico de gallo, queso fresco, guasacaca, and crème fraîche topped with fresh chopped cilantro.
+						 </p> 
+					 </div>
+				 </div>
+		 </div>
+       </div>
+ 
+<div>
+     <div class="HoverOn" style="text-align:center;border:1px solid black;">
+             <h1 style="font-size:30px;font-style:italic;margin:0px auto;padding:70px;display:inline-block;">FRESH EATS</h1>
+             <i class="fa fa-plus-circle" onclick="toggle_visibility('#fresh')" style="font-size:36px;"></i>
+	</div>
+	</div>
+		  <div id="fresh" style="display:none;padding:30px 100px;border:1px solid black;" >
+				 <h1 style="margin:40px;color:rgb(228,99,70);text-align:center">
+					FRESH EATS
+				 </h1>
+				 <p  style="margin=10px">
+					DRESSINGS INCLUDE: RANCH, BLUE CHEESE, BALSAMIC VINAIGRETTE, SMOKED TOMATO VINAIGRETTE. *PRICING AND MENU ITEM AVAILABILITY VARY BY LOCATION
+				 </p>
+				 <div class="row">
+					 <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+						FARMHOUSE SALAD	 
+						 </h4>
+						 <p>
+							Tender kale spring mix and crisp romaine topped with protein-rich roasted chickpeas, chopped cucumber, tomatoes, onion, cheddar cheese and signature 4R cornbread croutons.
+						 </p>
+					 </div>
+					 
+				 </div>
+		 </div>
+		 
+    
+
+
+
+<div>
+     <div class="HoverOn" style="text-align:center;border:1px solid black;">
+             <h1 style="font-size:30px;font-style:italic;margin:0px auto;padding:70px;display:inline-block;">HOMESTYLE SIDES</h1>
+             <i class="fa fa-plus-circle" onclick="toggle_visibility('#home')" style="font-size:36px;"></i>
+	</div>
+		  <div id="home" style="display:none;padding:30px 100px;border:1px solid black;" >
+				 <h1 style="margin:40px;color:rgb(228,99,70);text-align:center">
+					HOMESTYLE SIDES
+
+				 </h1>
+				 <p  style="margin=10px">
+					SIDE OPTIONS INCLUDE: SINGLE SERVING, PINT OR QUART. *PRICING AND MENU ITEM AVAILABILITY VARY BY LOCATION.
+				 </p>
+				 <div class="row">
+					 <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+						 BBQ BAKED BEANS
+						 </h4>
+						 <p>
+							4R baked beans with brisket and pork
+						 </p>
+					 </div>
+					  <div class="col-6">
+						  <h4 style="color:rgb(228,99,70)">
+							MAC and CHEESE
+						 </h4>
+						 <p>
+							Classic, creamy mac and cheese
+						 </p>
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							CRISPY CREAM BREAD PUDDING
+						 </h4>
+						 <p>
+							Bread pudding made from scratch with doughnuts, raisins & more, topped with a house-made doughnut glaze. 
+							 
+						 </p> 
+					 </div>
+					  <div class="col-6">
+						 <h4 style="color:rgb(228,99,70)">
+							FRIED OKRA
+						 </h4>
+						 <p>
+							Seasoned okra, breaded, and crispy fried 
+						 </p> 
+					 </div>
+				 </div>
+		 </div>
+		 
+       </div>
+
+<div style="background-color:#FFFFFF;">
+     <div style="text-align:center;border:1px solid black;">
+             <h1 style="font-size:50px;margin:0px auto;padding:90px 0px 10px;width:600px;">Hungry Now?</h1>
+               </br>
+                <a href="/location" class="btn btn--gold"style="margin:0px 0px 50px;">Find the location</a>
+                </br>
+       </div>
+  </div>
+
+ {% endblock %}
